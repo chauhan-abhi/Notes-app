@@ -11,13 +11,13 @@ console.log('Process', process.argv )
 console.log('Yarg', argv)
 
 if(command === 'add') {
-    console.log('adding new note')     
+    notes.addNote(argv.title, argv.body)
 } else if(command === 'list') {
-    console.log('Listing all nodes')
+    notes.getAll()
 } else if(command === 'read') {
-    console.log('Read a node')
+    notes.getNote(argv.title)
 } else if(command === 'remove') {
-    console.log('Remove this node')
+    notes.removeNote(argv.title)
 } else {
     console.log('Command not recognized')
 }
