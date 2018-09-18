@@ -1,4 +1,3 @@
-console.log('Starting notes.js')
 // module.exports.age =21
 // module.exports.add = (a,b) => {
 //     return a+b
@@ -41,7 +40,7 @@ var addNote = (title,body) => {
     } 
 }
 var getAll = () => {
-    console.log('Getting all notes')
+    return fetchNotes();
 }
 
 var getNote = (title) => {
